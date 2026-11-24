@@ -73,3 +73,6 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Local mobile config (see src/config.local.example.ts)
+src/config.local.ts

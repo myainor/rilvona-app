@@ -19,6 +19,10 @@ npm run android -- --port 8082 --no-packager
 
 Port 8081 is left alone if another Metro server is already using it. iOS builds need macOS and Xcode: `npm run ios`.
 
+## Local config
+
+By default the app talks to the hosted API. To run it against your own API, copy `src/config.local.example.ts` to `src/config.local.ts` and set `API_ORIGIN` there, for example `http://10.0.2.2:3000` for an API on your machine reached from the Android emulator. The same file holds the Google sign-in client IDs. `src/config.local.ts` is created by `npm install` and is never committed.
+
 ## What is on screen
 
 Welcome, registration, login, email verification, password reset, home feed, hives, posts, anonymous questions, events, search, alerts, profile, college verification, blocks, bookmarks, and account deletion.

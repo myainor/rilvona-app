@@ -93,7 +93,7 @@ npm run mobile:start
 npm run mobile:android
 ```
 
-The app talks to the hosted API by default. Before developing against your own API, change `API_ORIGIN` in `apps/mobile/src/config.ts` and set your own Google sign-in client IDs there. Be careful not to run a debug build against production data you don't want to change.
+The app talks to the hosted API by default. Before developing against your own API,set `API_ORIGIN` in `apps/mobile/src/config.local.ts` (see `apps/mobile/src/config.local.example.ts`)` and set your own Google sign-in client IDs there. Be careful not to run a debug build against production data you don't want to change.
 
 To sign a release build, create `~/hiihive-signing/keystore.properties` (or point `HIIHIVE_KEYSTORE_PROPERTIES` at another file) with `storeFile`, `storePassword`, `keyAlias`, and `keyPassword`. It lives outside the repo, and all keystores are gitignored. Without it, release builds fall back to the debug key.
 
